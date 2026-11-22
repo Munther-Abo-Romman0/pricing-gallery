@@ -1,0 +1,164 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+        .min-menu h1{
+            color: rgb(75, 194, 101);
+            padding: 0 20px;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .min-menu span{
+            font-weight: normal;
+            font-size: 35px;
+            color: rgba(75, 194, 101, 0.639);
+        }
+        .min-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            background-color: #333;
+            color: aliceblue;
+            margin-bottom: 60px;
+        }
+        .min-menu ul{
+            padding: 30px 20px ;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .min-menu ul a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            padding: 7px;
+            border-radius: 11px;
+        }
+        .min-menu ul a:hover{
+            border: 1px solid rgb(251, 251, 251);
+            background-color: rgba(0, 0, 0, 0.316);
+            color: wheat;
+            border-radius: 15px;
+        }
+
+        /* Cards */
+        .pricing-container{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 35px;
+            width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 450px;
+
+        }
+        .card{
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.50);
+            transition: transform 0.3s ease;
+            flex: 1;
+        }
+        .popular{
+            background-color: white;
+            text-align: center;
+            padding: 40px;
+            border-top: 9px solid blue;
+            border-radius: 15px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.50);
+            transform: scale(1.1);
+            position: relative;
+            z-index: 1;
+        }
+        .price{
+            font-size: 45px ; 
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 20px 0;
+        }
+        .price span{
+            font-weight: normal;
+            color: #777;
+            font-size: 20px;
+        }
+        .features{
+            list-style: none;
+            padding: 10px 0;
+            font-size:20px ;
+            margin-top: 22px;
+            margin-bottom: 20px;
+        }
+        button{
+            margin-top: 39px;
+            font-size: 16px;
+            width: 100%;
+            padding: 15px;
+            background-color: rgba(6, 76, 228, 0.84);
+            color: white;
+            border: 1px solid transparent;
+            border-radius: 30px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgba(6, 76, 228, 0.954) ;
+        }
+        /* Gallery */
+        .gallery-section{
+            width: 1100px;
+            margin: 60px auto 0;
+            padding: 0 20px;
+        }
+        .gallery-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery-header{
+            margin-top: 80px;
+        }
+        .gallery-item{
+            flex: 1 1 300px;
+            height: 250px;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .gallery-item img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s;
+        }
+        .gallery-item img:hover{
+            transform: scale(1.25);
+        }
+        .gallery-title{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: #00000023;
+            border-radius: 25px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+
+
+        }
